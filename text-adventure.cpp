@@ -20,8 +20,44 @@ sleep(2);
 std::cout << "Next to you, there is a machete, a map, and a flashlight\n";
 
 
-// Declaring variables
-int choice1;
-int choice2;
-int choice3;
+
+// First Fork in the story
+
+sleep(4);
+std::cout << "Here are your choices:\n";
+sleep(2);
+std::cout << "1) Grab the machete\n";
+std::cout << "2) Grab the map\n";
+std::cout << "3) Grab the flashlight\n";
+std::cout << "4) Go back to sleep\n";
+
+    int choice1;
+
+std::cin >> choice1;
+
+    if (choice1 == 1) {
+        std::cout << "You grabbed the machete!!\n";
+        sleep(2);
+        std::cout << "What a great choice....\n";
+        sleep(2);
+        std::cout << "Like a maniac, you go hacking through the woods in the most random direction, attempting to find some sort of evidence of civilization...\n";
+        sleep(5);
+        std::cout << "It is dark, and you are frantic...\n";
+        sleep(2);
+        std::cout << "Slice!\n";
+        sleep(1);
+        std::cout << "....Hack!\n";
+        sleep(1);
+        std::cout << "....You continue to slice away, until you smell the familiar smell of a campfire\n";
+        sleep(3);
+        std::cout << "Obviously, you head into that direction hoping you can find help....\n";
+        sleep(3);
+        std::cout << "But as you approached the camp, there was a family of Man-Bear-Pigs, and they snarled menacingly at you with drool of hunger dangling from their lips nearly to the floor.\n";
+        sleep(6);
+        std::cout << "Without a second thought, you turn and run back through the path straight to the only safe place you can think of...\n";
+        sleep(5);
+        std::cout << "....Your cave.\n";
+        
+    }
+
 }
