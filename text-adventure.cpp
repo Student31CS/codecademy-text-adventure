@@ -13,12 +13,6 @@ std::cout << "This is a game of choice, your choices will lead you down a path, 
 sleep(2);
 std::cout << "....\n";
 sleep(2);
-std::cout << "You have just woken up in a cave\n";
-sleep(2);
-std::cout << "And you can't remember a thing\n";
-sleep(2);
-std::cout << "Next to you, there is a machete, a map, and a flashlight\n";
-
 
 
 // If the player plays enough rounds.... he/she finishes the game
@@ -70,8 +64,8 @@ for (int i = 0; i <= 10; i = i + 1) {
             
         }
 
-        if (choice1 == 2) {
-            std::cout << "You grabbed the machete!!\n";
+        else if (choice1 == 2) {
+            std::cout << "You grabbed the map!!\n";
             sleep(2);
             std::cout << "What a great choice....\n";
             sleep(2);
@@ -92,8 +86,45 @@ for (int i = 0; i <= 10; i = i + 1) {
             std::cout << "....Your cave.\n";
         }
 
-        if (choice1 == 3) {
-            
+        else if (choice1 == 3) {
+            std::cout << "You grabbed the flashlight!!\n";
+            sleep(2);
+            std::cout << "What a great choice....\n";           
+            sleep(2);
+            std::cout << "....\n";
+            sleep(1);
+            std::cout << "....\n";
+            sleep(2);
+            std::cout << "The batteries are dead.\n";
+            sleep(2);
+            std::cout << "You still decide to go out,\n";
+            sleep(2);
+            std::cout << "Because the cave seems like a bad place\n";
+            sleep(2);
+            std::cout << "Immediately, you run into a Man-Bear-Pig, who snarles menacingly at you with drool of hunger dangling from it's lips nearly to the floor.\n";
+            std::cout << "Without a second thought, you turn and run back through the path straight to the only safe place you can think of...\n";
+            sleep(5);
+            std::cout << "....Your cave.\n";
         }
+
+        else if (choice1 == 4) {
+            std::cout << "....\n";
+            sleep(4);
+            std::cout << "....\n";
+            sleep(4);
+        }
+
+        else {
+            std::cout << "That is not an option!\n";
+            sleep(3);
+            std::cout << "Man-Bear-Pig.\n";
+            sleep(4);
+        } 
     }
+
+    std::cout << "You have woken up in you bed at home....\n";
+    sleep(3);
+    std::cout << "After a series of nightmares, you feel slightly traumatized.\n";
+    sleep(2);
+    std::cout << "And realize that a Man-Bear-Pig is sleeping next to you.......\n";
 }
